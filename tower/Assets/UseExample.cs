@@ -7,10 +7,12 @@ public class UseExample : MonoBehaviour
 {
     public Text titleText;
     public Text subTittleText;
+    public Button showLeader;
 
     [Space(10)]
     public string playerName;
     public int score;
+    public LeaderboardModel lbm;
 
     DataManager dataManager { get { return GetComponent<DataManager>(); } }
     ScoreManager scoreManager { get { return GetComponent<ScoreManager>(); } }
@@ -36,6 +38,7 @@ public class UseExample : MonoBehaviour
         //ponemos el texto donde va
         titleText.text = dataManager.dataModel.gameName;
         subTittleText.text = dataManager.dataModel.gameDescription;
+        showLeader.onClick.AddListener(() => { GetScores(); ShowScores(lbm); });
     }
 
     public void SendMyScore()
@@ -48,11 +51,20 @@ public class UseExample : MonoBehaviour
     {
         //pedimos los scores, a la vuelta la respuesta la maneja ShowScores
         scoreManager.GetLeaderboard(ShowScores, ShowError);
+        lbm = scoreManager.leaderboardModel ;
+
     }
 
     public void ShowScores(LeaderboardModel model)
     {
-        //lo mostramos en la UI
-        //implementacion libre :D
+        string nombre;
+        string puntos;
+        foreach (LeaderboardModel.PlayerScore s in lbm.leaderboard)
+        {
+            nombre = s.playername;
+            puntos = s.score;
+            print(nombre + " - " + puntos);
+
+        }
     }
 }
