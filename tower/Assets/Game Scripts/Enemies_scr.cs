@@ -10,21 +10,31 @@ public class Enemies_scr : MonoBehaviour
     public float speed;
 
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
         name = "Chinese Worker";
         health = 15;
         damage = 5;
         speed = 3.6f;
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
-		if (health == 0)
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (health != 0)
+        {
+            health -= 5;
+        }
+
+        if (health == 0)
         {
             DestroyObject(this.gameObject);
-        } 
-	}
+        }
+    }
 }
