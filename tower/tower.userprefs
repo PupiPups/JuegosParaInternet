@@ -3,8 +3,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game Scripts\Eventos_menu_scr.cs">
     <Files>
       <File FileName="Assets\Game Scripts\Player_scr.cs" Line="13" Column="2" />
-      <File FileName="Assets\UseExample.cs" Line="45" Column="51" />
-      <File FileName="Assets\Game Scripts\Eventos_menu_scr.cs" Line="17" Column="30" />
+      <File FileName="Assets\UseExample.cs" Line="69" Column="6" />
+      <File FileName="Assets\Game Scripts\Eventos_menu_scr.cs" Line="18" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

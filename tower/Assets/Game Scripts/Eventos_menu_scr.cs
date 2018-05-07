@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class Eventos_menu_scr : MonoBehaviour {
 
@@ -17,9 +16,7 @@ public class Eventos_menu_scr : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	public void Sel_Niv (Dropdown dif) {
-		PlayerPrefs.SetInt ("Dificul", dif.value);
-		print (dif);
+	public void Sel_Niv () {
 		SceneManager.LoadScene (2);
 	}
 }

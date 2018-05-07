@@ -8,7 +8,6 @@ public class UseExample : MonoBehaviour
     public Text titleText;
     public Text subTittleText;
     public Button showLeader;
-	public Dropdown dificultad;
 
     [Space(10)]
     public string playerName;
@@ -40,10 +39,6 @@ public class UseExample : MonoBehaviour
         titleText.text = dataManager.dataModel.gameName;
         subTittleText.text = dataManager.dataModel.gameDescription;
         showLeader.onClick.AddListener(() => { GetScores(); ShowScores(lbm); });
-		dificultad.options.Clear();
-		foreach (DataModel.Hardness s in dataManager.dataModel.hardness) {
-			dificultad.options.Add (new Dropdown.OptionData () { text = s.name });
-		}
     }
 
     public void SendMyScore()
@@ -66,7 +61,6 @@ public class UseExample : MonoBehaviour
         string puntos;
         foreach (LeaderboardModel.PlayerScore s in lbm.leaderboard)
         {
-			
             nombre = s.playername;
             puntos = s.score;
             print(nombre + " - " + puntos);
