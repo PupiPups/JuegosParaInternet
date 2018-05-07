@@ -54,6 +54,7 @@
      <Compile Include="Assets\DataModel.cs" />
      <Compile Include="Assets\Extensions\Texture2DExtensions.cs" />
      <Compile Include="Assets\Game Scripts\Bala_scr.cs" />
+     <Compile Include="Assets\Game Scripts\Enemies_scr.cs" />
      <Compile Include="Assets\Game Scripts\Eventos_menu_scr.cs" />
      <Compile Include="Assets\Game Scripts\Player_scr.cs" />
      <Compile Include="Assets\Managers\DataManager.cs" />
