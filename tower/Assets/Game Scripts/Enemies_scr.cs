@@ -7,14 +7,17 @@ public class Enemies_scr : MonoBehaviour
     public string name;
     public int health;
     public int damage;
-    public int velocity;
+    public float speed;
 
 
 	// Use this for initialization
 	void Start ()
     {
-		
-	}
+        name = "Chinese Worker";
+        health = 15;
+        damage = 5;
+        speed = 3.6f;
+    }
 	
 	// Update is called once per frame
 	void Update ()
