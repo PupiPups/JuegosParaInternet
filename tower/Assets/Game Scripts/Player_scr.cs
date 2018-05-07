@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player_scr : MonoBehaviour {
     public GameObject bala;
     public Vector2 inicio;
+    public int health;
     // Use this for initialization
     void Start () {
         inicio.x = -6f;
@@ -16,8 +17,23 @@ public class Player_scr : MonoBehaviour {
         if (Input.GetKeyDown("space"))
         {
             Instantiate(bala, inicio, Quaternion.identity);
-
         }
 		
 	}
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            if (health != 0)
+            {
+                health -= 5;
+            }
+
+            if (health == 0)
+            {
+                DestroyObject(this.gameObject);
+            }
+        }
+    }
 }
