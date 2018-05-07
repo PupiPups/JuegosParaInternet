@@ -7,7 +7,9 @@ public class Enemies_scr : MonoBehaviour
     public string nome;
     public int health;
     public int damage;
-    public float speed;
+
+    Rigidbody2D m_Rigidbody2D;
+    float Speed;
 
 
     // Use this for initialization
@@ -16,14 +18,17 @@ public class Enemies_scr : MonoBehaviour
         nome = "Chinese Worker";
         health = 15;
         damage = 5;
-        speed = 3.6f;
-
+      
+        m_Rigidbody2D = GetComponent<Rigidbody2D>();
+    
+        Speed = 3.6f;
     }
 
     // Update is called once per frame
     void Update()
     {
-		
+        m_Rigidbody2D.velocity = Vector2.left * Speed;
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,14 +36,17 @@ public class Enemies_scr : MonoBehaviour
         if (health != 0)
         {
             health -= 5;
-			DestroyObject (other.gameObject);
+			DestroyObject(gameObject);
         }
 
         if (health == 0)
         {
-			DestroyObject (other.gameObject);
-            DestroyObject(this.gameObject);
+			DestroyObject(gameObject);
+#pragma warning disable CS0618 // El tipo o el miembro están obsoletos
+            DestroyObject(gameObject);
+#pragma warning restore CS0618 // El tipo o el miembro están obsoletos
 
         }
     }
 }
+
