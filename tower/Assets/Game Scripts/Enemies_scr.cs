@@ -22,18 +22,20 @@ public class Enemies_scr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+		//GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, 0), ForceMode2D.Impulse);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (health != 0)
         {
             health -= 5;
+			DestroyObject (other.gameObject);
         }
 
         if (health == 0)
         {
+			DestroyObject (other.gameObject);
             DestroyObject(this.gameObject);
 
         }

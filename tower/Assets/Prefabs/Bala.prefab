@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50147649687039628}
   - component: {fileID: 95234680427587230}
   - component: {fileID: 114541365027840206}
+  - component: {fileID: 58670175675238192}
   m_Layer: 0
   m_Name: Bala
   m_TagString: Bala
@@ -63,6 +64,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 2
+--- !u!58 &58670175675238192
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1754045146950906}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.775
 --- !u!95 &95234680427587230
 Animator:
   serializedVersion: 3
