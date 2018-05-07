@@ -67,14 +67,15 @@
     <Compile Include="Assets\Game Scripts\Player_scr.cs" />
     <Compile Include="Assets\Managers\DataManager.cs" />
     <Compile Include="Assets\Managers\EnemyManager.cs" />
+    <Compile Include="Assets\Managers\HardnessManager.cs" />
     <Compile Include="Assets\Managers\RequestManager.cs" />
     <Compile Include="Assets\Managers\ScoreManager.cs" />
     <Compile Include="Assets\UseExample.cs" />
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Sergio/Documents/GitHub/JuegosParaInternet/tower/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Sergio/Documents/GitHub/JuegosParaInternet/tower/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/Sergio/Documents/GitHub/JuegosParaInternet/tower/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>F:/PROGRAMAS/Unity2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

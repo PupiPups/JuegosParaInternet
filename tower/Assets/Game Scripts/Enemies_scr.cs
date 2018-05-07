@@ -47,6 +47,13 @@ public class Enemies_scr : MonoBehaviour
 #pragma warning restore CS0618 // El tipo o el miembro están obsoletos
 
         }
+
+        
+    }
+    public void BuffCaos()
+    {   // se llama desde el EnemyManager para el modo caos.
+        Speed = 4.5f;
+        health = 20;
     }
 }
 
