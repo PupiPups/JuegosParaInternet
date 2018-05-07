@@ -5,7 +5,8 @@
       <File FileName="Assets\Game Scripts\Player_scr.cs" Line="1" Column="1" />
       <File FileName="Assets\UseExample.cs" Line="1" Column="1" />
       <File FileName="Assets\Game Scripts\Eventos_menu_scr.cs" Line="1" Column="1" />
-      <File FileName="Assets\Game Scripts\Enemies_scr.cs" Line="33" Column="22" />
+      <File FileName="Assets\Game Scripts\Enemies_scr.cs" Line="20" Column="3" />
+      <File FileName="Assets\Game Scripts\Bala_scr.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

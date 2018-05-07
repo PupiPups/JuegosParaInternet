@@ -17,12 +17,13 @@ public class Enemies_scr : MonoBehaviour
         health = 15;
         damage = 5;
         speed = 3.6f;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-		//GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, 0), ForceMode2D.Impulse);
+		
     }
 
     private void OnTriggerEnter2D(Collider2D other)
