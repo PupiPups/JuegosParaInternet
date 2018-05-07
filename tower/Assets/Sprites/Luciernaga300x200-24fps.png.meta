@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: 6139fd4551ae7214aa95c4402c53b14e
+timeCreated: 1525673341
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Luciernaga300x200-24fps_0
+    21300002: Luciernaga300x200-24fps_1
+    21300004: Luciernaga300x200-24fps_2
+    21300006: Luciernaga300x200-24fps_3
+    21300008: Luciernaga300x200-24fps_4
+    21300010: Luciernaga300x200-24fps_5
+    21300012: Luciernaga300x200-24fps_6
+    21300014: Luciernaga300x200-24fps_7
+    21300016: Luciernaga300x200-24fps_8
+    21300018: Luciernaga300x200-24fps_9
+    21300020: Luciernaga300x200-24fps_10
+    21300022: Luciernaga300x200-24fps_11
+    21300024: Luciernaga300x200-24fps_12
+    21300026: Luciernaga300x200-24fps_13
+    21300028: Luciernaga300x200-24fps_14
+    21300030: Luciernaga300x200-24fps_15
+    21300032: Luciernaga300x200-24fps_16
+    21300034: Luciernaga300x200-24fps_17
+    21300036: Luciernaga300x200-24fps_18
+    21300038: Luciernaga300x200-24fps_19
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 844
+        width: 198
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 828
+        width: 210
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_2
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 812
+        width: 227
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_3
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 804
+        width: 240
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 604
+        width: 248
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 620
+        width: 255
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_6
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 624
+        width: 258
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_7
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 626
+        width: 262
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 426
+        width: 264
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_9
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 426
+        width: 265
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_10
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 426
+        width: 265
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_11
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 427
+        width: 258
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 228
+        width: 252
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 231
+        width: 243
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_14
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 232
+        width: 237
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_15
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 235
+        width: 227
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 38
+        width: 219
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_17
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 40
+        width: 213
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_18
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 42
+        width: 204
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Luciernaga300x200-24fps_19
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 44
+        width: 198
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
