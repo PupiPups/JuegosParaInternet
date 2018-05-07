@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Player_scr : MonoBehaviour {
     public GameObject bala;
     public Vector2 inicio;
+    public GameObject hp;
     // Use this for initialization
     void Start () {
         inicio.x = -6f;
@@ -21,10 +22,21 @@ public class Player_scr : MonoBehaviour {
       //  }
 
     }
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.transform.tag == "enemigo")
+        {
+            hp.GetComponent<PlayerHP>().perdervida();
+            
 
 
-	// Update is called once per frame
-	void Update () {
+        }
+
+
+    }
+
+    // Update is called once per frame
+    void Update () {
         if (Input.GetKeyDown("space"))
         {
             Instantiate(bala, inicio, Quaternion.identity);

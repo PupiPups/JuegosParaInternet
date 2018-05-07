@@ -8,6 +8,7 @@ public class Enemies_scr : MonoBehaviour
     public int health;
     public int damage;
     public float speed;
+    public Rigidbody2D bala;
 
 
 	// Use this for initialization
@@ -18,13 +19,25 @@ public class Enemies_scr : MonoBehaviour
         damage = 5;
         speed = 3.6f;
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-		if (health == 0)
+        if (collision.gameObject.CompareTag("Bala"))
         {
-            DestroyObject(this.gameObject);
-        } 
+            if (health != 0)
+            {
+                health -= 5;
+                //DestroyObject(bala);
+
+            }
+
+            if (health == 0)
+            {
+                DestroyObject(this.gameObject);
+                PlayerPrefs.GetInt("Score" + 1);
+            }
+        }
+        
+        
 	}
 }
