@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Dificultad.unity
+=======
+- path: Assets/Scenes/Nivel 1.unity
+>>>>>>> fffe27032e2ebd9625c13f35aa329d807d6cffe6
   isLoaded: 1
   isActive: 1
