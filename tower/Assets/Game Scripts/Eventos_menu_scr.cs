@@ -9,6 +9,11 @@ public class Eventos_menu_scr : MonoBehaviour {
 	public void Sel_Dif () {
 		SceneManager.LoadScene (1);
 	}
+
+    public void Sel_Menu()
+    {
+        SceneManager.LoadScene(0);
+    }
 	
 	// Update is called once per frame
 	public void Sel_Niv () {
