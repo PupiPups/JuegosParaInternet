@@ -1,10 +1,11 @@
-﻿<Properties StartupItem="tower.csproj">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game Scripts\Eventos_menu_scr.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game Scripts\Enemies_scr.cs">
     <Files>
-      <File FileName="Assets\Game Scripts\Player_scr.cs" Line="13" Column="2" />
+      <File FileName="Assets\Game Scripts\Player_scr.cs" Line="7" Column="27" />
       <File FileName="Assets\UseExample.cs" Line="45" Column="51" />
-      <File FileName="Assets\Game Scripts\Eventos_menu_scr.cs" Line="17" Column="30" />
+      <File FileName="Assets\Game Scripts\Eventos_menu_scr.cs" Line="8" Column="2" />
+      <File FileName="Assets\Game Scripts\Enemies_scr.cs" Line="16" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

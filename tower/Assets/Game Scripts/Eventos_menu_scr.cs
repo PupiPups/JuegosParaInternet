@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Eventos_menu_scr : MonoBehaviour {
-
+	
 	// Use this for initialization
 	public void Sel_Dif () {
 		SceneManager.LoadScene (1);
@@ -22,4 +22,6 @@ public class Eventos_menu_scr : MonoBehaviour {
 		print (dif);
 		SceneManager.LoadScene (2);
 	}
+
+
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemies_scr : MonoBehaviour
 {
-    public string name;
+    public string nome;
     public int health;
     public int damage;
     public float speed;
@@ -13,7 +13,7 @@ public class Enemies_scr : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        name = "Chinese Worker";
+        nome = "Chinese Worker";
         health = 15;
         damage = 5;
         speed = 3.6f;
@@ -35,6 +35,7 @@ public class Enemies_scr : MonoBehaviour
         if (health == 0)
         {
             DestroyObject(this.gameObject);
+
         }
     }
 }
