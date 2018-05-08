@@ -7,6 +7,7 @@ public class Enemies_scr : MonoBehaviour
     public string nome;
     public int health;
     public int damage;
+    
 
     Rigidbody2D m_Rigidbody2D;
     float Speed;
@@ -33,19 +34,19 @@ public class Enemies_scr : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        int cantidad;
+        cantidad = PlayerPrefs.GetInt("Enemigos");
         if (health != 0)
         {
             health -= 5;
-			DestroyObject(gameObject);
+		    Object.Destroy(other.gameObject);
         }
 
         if (health == 0)
         {
-			DestroyObject(gameObject);
-#pragma warning disable CS0618 // El tipo o el miembro están obsoletos
-            DestroyObject(gameObject);
-#pragma warning restore CS0618 // El tipo o el miembro están obsoletos
-
+            Object.Destroy(gameObject);
+            cantidad--;
+            PlayerPrefs.SetInt("Enemigos", cantidad);
         }
 
         

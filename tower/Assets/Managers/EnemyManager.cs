@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyManager : MonoBehaviour {
 
@@ -17,43 +18,49 @@ public class EnemyManager : MonoBehaviour {
     {
         // Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
         InvokeRepeating("Spawn", spawnTime, spawnTime);
-        Enemigos = PlayerPrefs.GetInt("Enemigos");
-        Jefes = PlayerPrefs.GetInt("Jefes");
-        if (PlayerPrefs.GetString("Chaos") == "true")
-        {
+        
+        if (PlayerPrefs.GetString("Chaos") == "true") {
+
             discordia = true;
         }
-        else
-        {
+        else {
+
             discordia = false;
         }
     }
 
-
-    private void Spawn()
+    private void Update()
     {
-        if (PlayerPrefs.GetInt("Enemigos") >= 0)
+        Enemigos = PlayerPrefs.GetInt("Enemigos");
+        Jefes = PlayerPrefs.GetInt("Jefes");
+    }
+
+
+    void Spawn()
+    {
+        if (Enemigos > 0)
         {
             // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
-            Enemigos--;
-        Instantiate(enemy, spawnPoint, Quaternion.identity);
-    }
-        else {
-            yield break;
+            Instantiate(enemy, spawnPoint, Quaternion.identity);
         }
-        if (Jefes >= 0)
+        else if (Jefes > 0)
         {
           //  cantBoss--;
           //  Instantiate(boss, spawnPoint, Quaternion.identity);       activar cuando la clase boss este creado
         }
-        else
+        else if(Enemigos == 0 && Jefes == 0)
         {
-            yield break;
+            ganar();
         }
     }
     private void Caos()
     {
         spawnTime = 0.02f; //aumenta la rapidez del spawn   
         malos.BuffCaos(); //llama al metodo buffcaos de la clase enemi
+    }
+
+    void ganar()
+    {
+        SceneManager.LoadScene(3);
     }
 }
