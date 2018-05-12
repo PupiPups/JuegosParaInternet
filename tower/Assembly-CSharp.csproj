@@ -71,11 +71,11 @@
     <Compile Include="Assets\Managers\RequestManager.cs" />
     <Compile Include="Assets\Managers\ScoreManager.cs" />
     <Compile Include="Assets\UseExample.cs" />
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/admon/Documents/GitHub/JuegosParaInternet/tower/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/admon/Documents/GitHub/JuegosParaInternet/tower/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/admon/Documents/GitHub/JuegosParaInternet/tower/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

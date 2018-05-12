@@ -15,11 +15,11 @@ public class Eventos_menu_scr : MonoBehaviour {
     {
         SceneManager.LoadScene(0);
     }
-	
-	// Update is called once per frame
-	public void Sel_Niv (Dropdown dif) {
-		PlayerPrefs.SetInt ("Dificul", dif.value);
-		if (PlayerPrefs.GetInt ("Dificul") == 0) {
+
+    // Update is called once per frame
+    public void Sel_Niv(Dropdown dif) {
+        PlayerPrefs.SetInt("Dificul", dif.value);
+        if (PlayerPrefs.GetInt ("Dificul") == 0) {
 			PlayerPrefs.SetInt ("Enemigos", 3);
 			PlayerPrefs.SetInt ("Jefes", 0);
 			PlayerPrefs.SetString ("Chaos", "false");

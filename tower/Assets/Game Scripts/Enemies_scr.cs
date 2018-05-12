@@ -7,6 +7,7 @@ public class Enemies_scr : MonoBehaviour
     public string nome;
     public int health;
     public int damage;
+    public int speed;
     
 
     Rigidbody2D m_Rigidbody2D;
@@ -16,13 +17,14 @@ public class Enemies_scr : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        nome = "Chinese Worker";
-        health = 15;
-        damage = 5;
+        nome = PlayerPrefs.GetString("Enemy_Nombre");
+        health = PlayerPrefs.GetInt("Enemy_Vida");
+        damage = PlayerPrefs.GetInt("Enemy_Danio");
+        speed = PlayerPrefs.GetInt("Enemy_Velocidad");
       
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
     
-        Speed = 3.6f;
+        Speed = (float)speed;
     }
 
     // Update is called once per frame
