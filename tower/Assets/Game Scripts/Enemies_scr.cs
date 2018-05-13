@@ -8,6 +8,7 @@ public class Enemies_scr : MonoBehaviour
     public int health;
     public int damage;
     public int speed;
+    public int puntos;
     
 
     Rigidbody2D m_Rigidbody2D;
@@ -25,13 +26,17 @@ public class Enemies_scr : MonoBehaviour
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
     
         Speed = (float)speed;
+
+        puntos = PlayerPrefs.GetInt("Puntos");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         m_Rigidbody2D.velocity = Vector2.left * Speed;
-
+        
+        PlayerPrefs.SetInt("Puntos", puntos);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -40,23 +45,28 @@ public class Enemies_scr : MonoBehaviour
         cantidad = PlayerPrefs.GetInt("Enemigos");
         if (health != 0)
         {
-            health -= 5;
+            health -= PlayerPrefs.GetInt("Player_Danio");
 		    Object.Destroy(other.gameObject);
+            puntos += PlayerPrefs.GetInt("Multi");
+
         }
 
-        if (health == 0)
+        if (health <= 0)
         {
-            Object.Destroy(gameObject);
+            Object.Destroy(other.gameObject);
             cantidad--;
             PlayerPrefs.SetInt("Enemigos", cantidad);
+            
+            
+            Object.Destroy(gameObject);
         }
 
         
     }
     public void BuffCaos()
     {   // se llama desde el EnemyManager para el modo caos.
-        Speed = 4.5f;
-        health = 20;
+        Speed = Speed * 2f;
+        health = health * 2;
     }
 }
 

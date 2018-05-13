@@ -32,7 +32,7 @@ public class EnemyManager : MonoBehaviour {
     private void Update()
     {
         Enemigos = PlayerPrefs.GetInt("Enemigos");
-        Jefes = PlayerPrefs.GetInt("Jefes");
+        Jefes = PlayerPrefs.GetInt("Boss");
     }
 
 
@@ -46,7 +46,7 @@ public class EnemyManager : MonoBehaviour {
         else if (Jefes > 0)
         {
           //  cantBoss--;
-          //  Instantiate(boss, spawnPoint, Quaternion.identity);       activar cuando la clase boss este creado
+          Instantiate(boss, spawnPoint, Quaternion.identity);
         }
         else if(Enemigos == 0 && Jefes == 0)
         {
