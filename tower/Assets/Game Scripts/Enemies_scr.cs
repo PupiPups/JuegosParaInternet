@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemies_scr : MonoBehaviour
 {
@@ -9,7 +10,6 @@ public class Enemies_scr : MonoBehaviour
     public int damage;
     public int speed;
     public int puntos;
-    
 
     Rigidbody2D m_Rigidbody2D;
     float Speed;
@@ -29,6 +29,8 @@ public class Enemies_scr : MonoBehaviour
 
         puntos = PlayerPrefs.GetInt("Puntos");
         
+        
+
     }
 
     // Update is called once per frame
@@ -48,7 +50,7 @@ public class Enemies_scr : MonoBehaviour
             health -= PlayerPrefs.GetInt("Player_Danio");
 		    Object.Destroy(other.gameObject);
             puntos += PlayerPrefs.GetInt("Multi");
-
+            
         }
 
         if (health <= 0)
@@ -57,7 +59,7 @@ public class Enemies_scr : MonoBehaviour
             cantidad--;
             PlayerPrefs.SetInt("Enemigos", cantidad);
             
-            
+
             Object.Destroy(gameObject);
         }
 

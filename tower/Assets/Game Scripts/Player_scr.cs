@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player_scr : MonoBehaviour {
     public GameObject bala;
@@ -9,6 +10,7 @@ public class Player_scr : MonoBehaviour {
     public int puntos;
     public string nombre;
     public int vida;
+    public Scrollbar barra_vida;
     // Use this for initialization
     void Start () {
         inicio.x = -6f;
@@ -34,10 +36,12 @@ public class Player_scr : MonoBehaviour {
             if (tipo == true)
             {
                 vida -= PlayerPrefs.GetInt("Boss_Danio");
+                barra_vida.size = (float)vida / 100f;
             }
             else
             {
                 vida -= PlayerPrefs.GetInt("Enemy_Danio");
+                barra_vida.size = (float)vida / 100f;
             }
         }
         else

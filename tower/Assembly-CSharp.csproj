@@ -66,6 +66,7 @@
     <Compile Include="Assets\Game Scripts\Enemies_scr.cs" />
     <Compile Include="Assets\Game Scripts\Eventos_menu_scr.cs" />
     <Compile Include="Assets\Game Scripts\Fun.cs" />
+    <Compile Include="Assets\Game Scripts\nombre_scr.cs" />
     <Compile Include="Assets\Game Scripts\Player_scr.cs" />
     <Compile Include="Assets\Managers\DataManager.cs" />
     <Compile Include="Assets\Managers\EnemyManager.cs" />
