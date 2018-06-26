@@ -35,8 +35,8 @@ public class Vida : NetworkBehaviour{
         }
 
     }
-    void OnChangeHealth(int health){
-        healthBar.sizeDelta = new Vector2(health, healthBar.sizeDelta.y);
+    void OnChangeHealth(int currentHealth){
+        healthBar.sizeDelta = new Vector2(currentHealth, healthBar.sizeDelta.y);
     }
 
     [ClientRpc]
